@@ -10,12 +10,12 @@ A Ruby gem for easy interfacing with the Quickblox API.
 
 
 ```ruby
-client = QuickbloxApi.client(application_id: 1337, auth_key: 'aK89LOdzSAk09A', auth_secret: 'AZLKV8ZnJ-NkL13', user_owner_id: 2410)
-```
-
-```#query(method, path, body = {}) ```
-
-```ruby
+client = QuickbloxApi.client(
+  application_id: 1337,
+  auth_key: 'aK89LOdzSAk09A',
+  auth_secret: 'AZLKV8ZnJ-NkL13',
+  user_owner_id: 2410
+)
 client.query :get, '/users.json'
 => {
     :status=>200, # response status
@@ -34,8 +34,6 @@ client.query :get, '/users.json'
       ]}
    }
 ```
-
-
 
 
 ## Contributing and license
